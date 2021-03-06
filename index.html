@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BUDGET CALCULATOR</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Welcome to the budget calculator!</h1>
+		<p>This calculator is designed to calculate your daily budget based on the amount of money you have to use, how many days till the end of the month, how much you're hoping to save this month and the payments you still have to deliver (utilities, phone bill ect.)</p>
+		<br>
+		<p>Budgeting and handling money isn't easy. And more than often it creates more anxiety than gives you a peace of mind. This calculator is to be used as tool for assessing how much you could spend and afford in this month.</p>
+		<br>
+		<p>The equation is simple: bank balance minus savings minus costs and bills divided by the amount of days left in current month.</p>
+
+	</header>	
+	<form action="" id="thecalculator" onsubmit="">
+		<label for="Bank balance">Bank balance:</label> 
+		<input type="number" name="Bank balance" id="first" placeholder="€€€" required>
+		<br>
+		<label for="Costs and bills">Costs and bills:</label> 
+		<input type="number" name="Costs and bills" id="second" placeholder="€€€" required>
+		<br>
+		<label for="Amount to save this month">Amount to save this month:</label>
+		<input type="number" name="Amount to save this month" id="third" placeholder="€€€" required>
+		<br>
+		<input type="submit" name="">
+
+		<div id="daily budget">
+			<p>Your daily budget:</p>
+			<input type="number" name="daily budget" >
+			<!-- tähän sitten tulee laskelman tulos-->
+		</div>
+	</form>
+
+
+</body>
+</html>
+
+
+<!-- GET REMAINING DAYS IN CURRENT MONTH IN JS <script>
+                // Add your javascript here
+                $(function() {
+                        getRemanningDays();
+                });
+
+                var getRemanningDays = function() {
+                        var date = new Date();
+                        var time = new Date(date.getTime());
+                        time.setMonth(date.getMonth() + 1);
+                        time.setDate(0);
+                        var days =time.getDate() > date.getDate() ? time.getDate() - date.getDate() : 0;
+                        alert(days +' Days Remaining.');
+                        $('#remainingday').html(days);
+                }
+        </script> http://embed.plnkr.co/FFUXhl/preview -->
 
