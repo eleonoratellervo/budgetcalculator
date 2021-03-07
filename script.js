@@ -1,5 +1,13 @@
- GET REMAINING DAYS IN CURRENT MONTH IN JS <script>
-                // Add your javascript here
+//EKAKSI SIIS OON LÖYTÄNY TOHON TOMMOSEN JOKA LASKEE MUN LASKUTOIMITUKSESSA KÄYTETTÄVÄN
+// JAKAJAN, ELI MONTAKO PÄIVÄÄ KUUKAUDESSA ON VIELÄ JÄLJELLÄ!
+//JOKA SITTEN TOIMII JAKAJANA FORM-INPUTEISTA SAADUILLE YHTEEN LASKETTAVILLE ARVOILLE
+
+//TÄMÄN HÖSKÄN TULOS PITÄÄ SAADA VIELÄ TONNE LASKUTOIMITUKSEEN MUKAAN. VOINKO JOTENKIN TON var days'IN
+//MÄÄRITTÄÄ NUMEERISEKSI ARVOKSI JA KÄYTTÄÄ SITÄ LASKUTOIMITUKSESSA MYÖHEMMIN?
+//VAI KÄSKENKÖ KONEEN PULJAAMAAN
+
+<script>
+
                 $(function() {
                         getRemanningDays();
                 });
@@ -13,45 +21,74 @@
                         alert(days +' Days Remaining.');
                         $('#remainingday').html(days);
                 }
-        </script> http://embed.plnkr.co/FFUXhl/preview -->
+        </script> 
 
 
-function getQuantity()
-{
-    //Assume form with id="theform"
-    var thecalculator = document.forms["first"];
-    var thecalculator = document.forms["second"];
-    var thecalculator = document.forms["third"];
-	var getRemanningDays = #remainingday
+//ht tp://embed.plnkr.co/FFUXhl/preview -->
 
-	function getTotal()
-	{
-		var daily budget = getfirst
-	}
+// TÄSSÄ NÄITÄ VAIHTOEHTOJA JOILLA KUVITTELISIN ET SAISIN TON PULJATTUA
+// JA SE YHTÄLÖ JONKA TULOKSEN SIIS HALUAN ON
+// (A1+(-A2)+(-A3))/A4=A5
+// EKANA MUN MIELESTÄ LUPAAVIN VAIHTOEHTO
 
-    //Get a reference to the TextBox
-    var quantity = theForm.elements["quantity"];
-    var howmany =0;
-    //If the textbox is not blank
-    if(quantity.value!="")
-    {
-        howmany = parseInt(quantity.value);
-    }
-return howmany;
-}
+<script>
 
-var valittuTekstikappale = document.querySelector('p');
-var teksti = 'Jotain ihan muuta';
-
-valittuTekstikappale.textContent = teksti;
-
-form.thecalculator = function() {
-	var inputs = document.getElementsByTagName('first'),
-	var inputs = document.getElementsByTagName('second'),
-	var inputs = document.getElementsByTagName('third'),
-	
-	calculate.(((-first) + (-second))/third=0);
+var A1 = 5;
+var A2 = 6;
+var A3 = 6;
+var days = ;
+var total = (A1 + -A2 + -A3)/days;
+document.getElementById("thecalculator").innerHTML =
+"Your daily budget: " + total;
+</script>
 
 
 
-}
+
+
+
+
+//	//function getQuantity()
+//{
+//  //Assume form with id=""
+//    var  = document.forms["A1"];
+//    var  = document.forms["A2"];
+//   var  = document.forms["A3"];
+//	var getRemanningDays = #remainingday
+
+//	function getTotal()
+//	{
+//		var daily budget = getfirst
+//	}
+
+  //Get a reference to the TextBox
+//   var quantity = theForm.elements["quantity"];
+//    var howmany =0;
+//    //If the textbox is not blank
+//    if(quantity.value!="")
+//    {
+//        howmany = parseInt(quantity.value);
+//    }
+//return howmany;
+//}
+
+
+
+//form.thecalculator = function() {
+//	var inputs = document.getElementsByTagName('A1'),
+//	var inputs = document.getElementsByTagName('A2'),
+//	var inputs = document.getElementsByTagName('A3'),
+//	var output = ((-A1+-A2)/A3=A4),
+
+
+
+
+
+	//calculate.(((-A1)+(-A2))/A3=A4);
+
+
+
+//}
+
+
+//document.getElementById('total_expenses').value = firstValue + secondValue + thirdValue + fourthValue;

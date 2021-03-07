@@ -6,6 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script type="text/javascript" src="script.js"></script>
+    <title>Remaining days in current month in javascript</title>
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+                // Add your javascript here
+                $(function() {
+                        getRemanningDays();
+                });
+
+                var getRemanningDays = function() {
+                        var date = new Date();
+                        var time = new Date(date.getTime());
+                        time.setMonth(date.getMonth() + 1);
+                        time.setDate(0);
+                        var days =time.getDate() > date.getDate() ? time.getDate() - date.getDate() : 0;
+                        $('#remainingday').html(days);
+                }
+        </script>
 </head>
 <body>
 	<header>
@@ -16,23 +33,42 @@
 		<br>
 		<p>The equation is simple: bank balance minus savings minus costs and bills divided by the amount of days left in current month.</p>
 
-	</header>	
+		<h1>Get Remaining days in current month in JavaScript</h1>
+        <p style="color:red;">Remaining Days : <span id="remainingday"></span> days.</p>
+
+	</header>
+
 	<form action="" id="thecalculator" onsubmit="">
 		<label for="Bank balance">Bank balance:</label> 
-		<input type="number" name="Bank balance" id="first" placeholder="€€€" required>
+		<input type="number" name="Bank balance" id="A1" placeholder="€€€" value="" required>
 		<br>
 		<label for="Costs and bills">Costs and bills:</label> 
-		<input type="number" name="Costs and bills" id="second" placeholder="€€€" required>
+		<input type="number" name="Costs and bills" id="A2" placeholder="€€€" value="">
 		<br>
 		<label for="Amount to save this month">Amount to save this month:</label>
-		<input type="number" name="Amount to save this month" id="third" placeholder="€€€" required>
+		<input type="number" name="Amount to save this month" id="A3" placeholder="€€€" value="">
 		<br>
 		<input type="submit" name="">
+<!-- A4 on se kuukaudessa jäljellä olevia päiviä ja A5 laskutoimituksen tulos-->
+<h2>JavaScript Variables</h2>
 
-		<div id="daily budget">
+<p id="demo"></p>
+
+<script>
+var A1 = document.getElementById("A1");
+var A2 = document.getElementById("A2");
+var A3 = document.getElementById("A3");
+var days = document.getElementById("remainingday");
+var total = (A1 - A2 -A3)/days;
+document.getElementById("demo").innerHTML =
+"The total is: " + total;
+</script>
+
+		<div id="A5">
 			<p>Your daily budget:</p>
-			<input type="number" name="daily budget" >
-			<!-- tähän sitten tulee laskelman tulos-->
+			<output type="number" name="daily budget" id="A5" >
+
+			</output>
 		</div>
 	</form>
 
