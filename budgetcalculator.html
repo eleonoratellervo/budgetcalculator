@@ -13,8 +13,6 @@
                 time.setMonth(date.getMonth() + 1);
                 time.setDate(0);
                 var days =time.getDate() > date.getDate() ? time.getDate() - date.getDate() : 0;
-
-                return days;
             }
 
             function laske(e) {
@@ -30,13 +28,13 @@
 <body>
 	<header>
 		<h1>Welcome to the budget calculator!</h1>
-		<p>This site helps you to count your daily budget based on the amount of money you have, how many days untill the end of the month. You can even factor in your pending bills and payments and the amount you're hoping to save this month.</p>
+		<p>This site helps you to count your daily budget based on the amount of money you have for the rest of the month. You can even factor in your pending bills and payments and the amount you're hoping to save this month.</p>
 		<br>
 		<p>Handling money and budgeting isn't easy. And too often it creates anxiety instead of security and prosper. Many times we struggle to understand what we can afford and how it correlates to how much money we have. </p>
         <br>
         <p>Use this site to count your daily budget!</p>
         <br>
-        <p>The equation is simple: bank balance minus savings minus costs and bills divided by the amount of days left in current month.</p>
+        <p>The equation is simple: bank balance minus savings minus costs and bills divided by the amount of days left in the current month.</p>
         <br>
 
 	</header>
@@ -46,14 +44,14 @@
 		<input type="number" name="Bank balance" id="A1" placeholder="€€€" value="" required >
 		<br>
 		<label for="A2">Costs and bills:</label> 
-		<input type="number" name="Costs and bills" id="A2" placeholder="€€€" value="" >
+		<input type="number" name="Costs and bills" id="A2" placeholder="€€€" value="" />
 		<br>
 		<label for="A3">Amount to save this month:</label>
-		<input type="number" name="Amount to save this month" id="A3" placeholder="€€€" value="" >
+		<input type="number" name="Amount to save this month" id="A3" placeholder="€€€" value="" />
 		<br>
-		<input type="button" name="" onclick="laske()" value="Calculate" >
+		<input type="button" name="" onclick="laske()" value="Calculate" />
         <label for="result"> Your daily budget:</label> 
-        <input type="number" name="Your daily budget" id="result" placeholder="€€€" value="" readonly="true" >
+        <input type="number" name="Your daily budget" id="result" placeholder="€€€" value="" readonly="true" />
 	</form>
 
 
